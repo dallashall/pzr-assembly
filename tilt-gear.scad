@@ -58,12 +58,12 @@ module RailGuide(gearOuterDiameter = 150, gearThickness = 20){
   union(){
     mirror([0, 0, 1]){
       translate([0, 0, insetDiameter / 2 - gearThickness / 2 - 1]){
-        cylinder(insetDiameter, insetDiameter, 0, center = true);
+        cylinder(insetDiameter, insetDiameter, 0, center = true, $fn=100);
       }
     }
     translate([0, 0, insetDiameter / 2 - gearThickness / 2 - 1]){
 
-      cylinder(insetDiameter, insetDiameter, 0, center = true);
+      cylinder(insetDiameter, insetDiameter, 0, center = true, $fn=100);
     }
   }
 }
